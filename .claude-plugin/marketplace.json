@@ -1,0 +1,14 @@
+{
+  "name": "seed",
+  "owner": {
+    "name": "haroundominique",
+    "email": "haroundominique@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "seed",
+      "source": "./",
+      "description": "Spec-grounded agentic build workflow with adaptive complexity routing, just-in-time phase loading, and a two-speed memory bank."
+    }
+  ]
+}
