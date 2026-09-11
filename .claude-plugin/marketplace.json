@@ -10,5 +10,6 @@
       "source": "./",
       "description": "Spec-grounded agentic build workflow with adaptive complexity routing, just-in-time phase loading, and a two-speed memory bank."
     }
-  ]
+  ],
+  "description": "SEED \u2014 a spec-grounded agentic build workflow for Claude Code."
 }

@@ -14,7 +14,5 @@
     "memory-bank",
     "agents"
   ],
-  "commands": "./commands",
-  "agents": "./agents",
-  "hooks": "./hooks/hooks.json"
+  "commands": "./commands"
 }
