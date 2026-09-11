@@ -6,8 +6,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/session-end-log.sh",
-            "description": "Save a per-session log entry under memory-bank/.local/session-logs/ for /seed:reflect to read as evidence"
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-end-log.mjs\"",
+            "description": "Save a per-session log entry under memory-bank/.local/session-logs/ for /seed:reflect to read as evidence. Node, not a shell, so the hook fires on every platform Claude Code runs on. Fails silently: a hook must never break the session it is attached to."
           }
         ]
       }
