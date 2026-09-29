@@ -1,0 +1,41 @@
+{
+  "name": "seed",
+  "version": "1.1.0",
+  "description": "Spec-grounded agentic build workflow with adaptive complexity routing, just-in-time phase loading, and a two-speed memory bank.",
+  "author": {
+    "name": "haroundominique",
+    "email": "haroundominique@gmail.com"
+  },
+  "homepage": "https://github.com/HarounDominique/seed",
+  "repository": "https://github.com/HarounDominique/seed",
+  "license": "MIT",
+  "keywords": [
+    "spec-driven",
+    "tdd",
+    "workflow",
+    "memory-bank",
+    "agents",
+    "claude-code",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SEED",
+    "shortDescription": "Spec-grounded agentic build workflow",
+    "longDescription": "A dual-client workflow that routes work from specification through plan, TDD build phases, reflection, verification, and archive while preserving a durable project memory bank.",
+    "developerName": "Haroun Dominique",
+    "category": "Engineering",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/HarounDominique/seed",
+    "defaultPrompt": [
+      "Use SEED to determine the next workflow step for this repository",
+      "Initialize SEED and write a spec for this task",
+      "Run the next SEED build phase for this task"
+    ],
+    "brandColor": "#7C3AED",
+    "screenshots": []
+  }
+}
