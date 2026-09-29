@@ -3,6 +3,14 @@
 Format: one entry per notable change, newest first. Schema-affecting changes also get a
 row in `context/schema-migrations.md`.
 
+## Unreleased
+
+SEED now ships a native Codex compatibility layer alongside the existing Claude Code
+plugin. The fourteen workflow commands are exposed as Codex skills, with a Codex
+manifest, repo marketplace entry, portable runtime guidance, and a deterministic parity
+validator. The shared commands, Claude manifest, agents, hooks, and scripts remain the
+source of workflow behavior for both clients.
+
 ## 1.1.0
 
 **MIT.** The plugin was published as `UNLICENSED` — "all rights reserved, not licensed for

@@ -1,0 +1,9 @@
+- [ ] Add `.codex-plugin/plugin.json` and command skills.
+  - Acceptance: all fourteen Claude commands have native Codex skill entries.
+  - Verify: `node scripts/validate-codex-compatibility.mjs`
+- [ ] Add portable references and validator.
+  - Acceptance: validator detects missing skills, invalid JSON, and Claude-only placeholders.
+  - Verify: validator plus `node --check scripts/validate-codex-compatibility.mjs`
+- [ ] Document dual-client installation.
+  - Acceptance: README explains Claude and Codex installation and invocation.
+  - Verify: inspect README diff and run `git diff --check`.

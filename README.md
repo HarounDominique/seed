@@ -1,6 +1,6 @@
 # SEED
 
-A spec-grounded agentic build workflow for Claude Code. Every task traces back to a spec
+A spec-grounded agentic build workflow for Claude Code and Codex. Every task traces back to a spec
 document, every commit passes a deterministic TDD gate, and every closed task leaves a
 reusable rule behind.
 
@@ -16,9 +16,31 @@ Three ideas do the work:
 
 ## Install
 
+### Claude Code
+
 ```
 /plugin marketplace add /path/to/SEED
 /plugin install seed@seed
+```
+
+### Codex
+
+Codex loads the native `.codex-plugin/` manifest and exposes the workflow as
+skills. Add the repository as a marketplace and install `seed`:
+
+```bash
+codex plugin marketplace add https://github.com/HarounDominique/seed.git
+codex plugin add seed@seed
+```
+
+Use `$seed-go`, `$seed-spec`, `$seed-plan`, `$seed-build`, and the other
+`$seed-*` skills. Codex uses skills rather than Claude's `/seed:<command>`
+slash-command registry; both clients execute the same shared command workflow.
+
+The Codex adapter is validated with:
+
+```bash
+node scripts/validate-codex-compatibility.mjs
 ```
 
 Then, in the project you want to work in:
